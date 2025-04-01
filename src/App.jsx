@@ -6,6 +6,7 @@ import ProjectList from './projectList.json';
 import Counter from './projects/project1/App';
 import TodoList from './projects/project2/App';
 import FormValidation from './projects/project3/App';
+import StarReating from './projects/project4/App';
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
 
         {/* <Counter/> */}
         {/* <TodoList/> */}
-        <FormValidation/>
+        {/* <FormValidation/> */}
+        <StarReating/>
       </div>
     </> 
   )
