@@ -7,6 +7,8 @@ import Counter from './projects/project1/App';
 import TodoList from './projects/project2/App';
 import FormValidation from './projects/project3/App';
 import StarReating from './projects/project4/App';
+import Accordion from './projects/project5/App';
+import Pratic from './projects/pratic/Pratic';
 
 function App() {
 
@@ -21,10 +23,13 @@ function App() {
           })
         } */}
 
+        <Pratic/>
+
         {/* <Counter/> */}
         {/* <TodoList/> */}
         {/* <FormValidation/> */}
-        <StarReating/>
+        {/* <StarReating/> */}
+        {/* <Accordion/> */}
       </div>
     </> 
   )
