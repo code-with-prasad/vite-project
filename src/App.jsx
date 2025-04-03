@@ -9,6 +9,7 @@ import FormValidation from './projects/project3/App';
 import StarReating from './projects/project4/App';
 import Accordion from './projects/project5/App';
 import Pratic from './projects/pratic/Pratic';
+import ModalComponent from './projects/project6/App';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
         {/* <FormValidation/> */}
         {/* <StarReating/> */}
         {/* <Accordion/> */}
+        {/* <ModalComponent/> */}
+
       </div>
     </> 
   )
