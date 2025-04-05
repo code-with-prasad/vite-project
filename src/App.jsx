@@ -10,6 +10,7 @@ import StarReating from './projects/project4/App';
 import Accordion from './projects/project5/App';
 import Pratic from './projects/pratic/Pratic';
 import ModalComponent from './projects/project6/App';
+import StopWatch from './projects/project7/App';
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
           })
         } */}
 
-        <Pratic/>
+        {/* <Pratic/> */}
 
         {/* <Counter/> */}
         {/* <TodoList/> */}
@@ -32,6 +33,7 @@ function App() {
         {/* <StarReating/> */}
         {/* <Accordion/> */}
         {/* <ModalComponent/> */}
+        <StopWatch/>
 
       </div>
     </> 
