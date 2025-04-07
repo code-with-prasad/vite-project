@@ -17,7 +17,7 @@ const StopWatch = () => {
                 setHour((prevHour) => prevHour + 1);
                 return 0;
               } else {
-                return prevMinute + 1;
+                return prevMinute + 1;  
               }
             });
             return 0;

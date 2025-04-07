@@ -11,6 +11,7 @@ import Accordion from './projects/project5/App';
 import Pratic from './projects/pratic/Pratic';
 import ModalComponent from './projects/project6/App';
 import StopWatch from './projects/project7/App';
+import SearchBar from './projects/project8/App';
 
 function App() {
 
@@ -33,7 +34,8 @@ function App() {
         {/* <StarReating/> */}
         {/* <Accordion/> */}
         {/* <ModalComponent/> */}
-        <StopWatch/>
+        {/* <StopWatch/> */}
+        <SearchBar/>
 
       </div>
     </> 
