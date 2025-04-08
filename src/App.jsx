@@ -12,6 +12,7 @@ import Pratic from './projects/pratic/Pratic';
 import ModalComponent from './projects/project6/App';
 import StopWatch from './projects/project7/App';
 import SearchBar from './projects/project8/App';
+import ImageCarousel from './projects/project9/App';
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
         {/* <Accordion/> */}
         {/* <ModalComponent/> */}
         {/* <StopWatch/> */}
-        <SearchBar/>
+        {/* <SearchBar/> */}
+        <ImageCarousel/>
 
       </div>
     </> 
