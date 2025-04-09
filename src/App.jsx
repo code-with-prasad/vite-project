@@ -13,6 +13,7 @@ import ModalComponent from './projects/project6/App';
 import StopWatch from './projects/project7/App';
 import SearchBar from './projects/project8/App';
 import ImageCarousel from './projects/project9/App';
+import TabsComponent from './projects/project10/App';
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
           })
         } */}
 
-        {/* <Pratic/> */}
+        <Pratic/>
 
         {/* <Counter/> */}
         {/* <TodoList/> */}
@@ -37,7 +38,8 @@ function App() {
         {/* <ModalComponent/> */}
         {/* <StopWatch/> */}
         {/* <SearchBar/> */}
-        <ImageCarousel/>
+        {/* <ImageCarousel/> */}
+        {/* <TabsComponent/> */}
 
       </div>
     </> 
