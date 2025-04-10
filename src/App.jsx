@@ -14,8 +14,11 @@ import StopWatch from './projects/project7/App';
 import SearchBar from './projects/project8/App';
 import ImageCarousel from './projects/project9/App';
 import TabsComponent from './projects/project10/App';
+import AutoComplete from './projects/project11/AutoComplete';
 
 function App() {
+
+  const Suggestions = ["Apple", "Banana", "Papaya", "Orange", "Kiwi" ]
 
   return (
     <>
@@ -28,7 +31,7 @@ function App() {
           })
         } */}
 
-        <Pratic/>
+        {/* <Pratic/> */}
 
         {/* <Counter/> */}
         {/* <TodoList/> */}
@@ -40,7 +43,7 @@ function App() {
         {/* <SearchBar/> */}
         {/* <ImageCarousel/> */}
         {/* <TabsComponent/> */}
-
+        <AutoComplete suggestions={Suggestions} />
       </div>
     </> 
   )

@@ -4,3 +4,55 @@
     min-width: 800px;
     margin: 0 auto;
 }
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  input[type="text"] {
+    height: 30px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    font-size: 20px;
+    padding-inline: 8px;
+    color: #333;
+    transition: all 0.2s linear;
+  }
+  
+  input[type="text"]:focus {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(51, 138, 209);
+    outline: 0;
+  }
+
+  button.danger {
+    background-color: #980909;
+  }
+  
+  button.success {
+    background-color: #0e6c18;
+  }
+  
+  button.warning {
+    background-color: #ae650c;
+  }
+  
+  button {
+    font-weight: bold !important;
+  }
