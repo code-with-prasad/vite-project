@@ -5,7 +5,7 @@ import InputText from './input-text/InputText'
 import Button from './button/Button'
 import Suggestions from './suggestions/Suggestions';
 
-const AutoComplete = ({suggestions}) => {
+const AutoComplete = ({isLoading, suggestions, onChange=()=>{}}) => {
 
   const[query, setQuery] = useState('');
   const[showList, setShowList] = useState(false);
@@ -13,6 +13,7 @@ const AutoComplete = ({suggestions}) => {
   function handleQueryChange(value){
     setQuery(value);
     setShowList(true)
+    onChange(value);
   }
 
   function handleClear (){
@@ -21,6 +22,7 @@ const AutoComplete = ({suggestions}) => {
 
   function handleSuggestionSelect(selectedSuggestion){
     setQuery(selectedSuggestion);
+    onChange(selectedSuggestion);
     setShowList(false);
   }
 
@@ -28,6 +30,11 @@ const AutoComplete = ({suggestions}) => {
     return suggestion.toLowerCase().includes(query.toLowerCase());
   });
 
+  let showSuggestionsWithLoader = !!query.length && showList
+
+  if(isLoading && query.length){
+    showSuggestionsWithLoader = true
+  }
 
   return (
     <div className='autocomplete'>
@@ -36,7 +43,14 @@ const AutoComplete = ({suggestions}) => {
         <Button onClick={handleClear} lable="clear" />
       </div>
 
-      {!!query.length && showList && <Suggestions suggestions={filteredQuery} onSelect={handleSuggestionSelect} />}
+      {showSuggestionsWithLoader && (
+        <Suggestions
+          isLoading = {isLoading} 
+          suggestions={filteredQuery} 
+          onSelect={handleSuggestionSelect} 
+          selectedSuggestion = {query}
+        />
+      )}
 
     </div>
   )

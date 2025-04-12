@@ -14,11 +14,9 @@ import StopWatch from './projects/project7/App';
 import SearchBar from './projects/project8/App';
 import ImageCarousel from './projects/project9/App';
 import TabsComponent from './projects/project10/App';
-import AutoComplete from './projects/project11/AutoComplete';
+import AutoCompleteComponent from './projects/project11/App';
 
 function App() {
-
-  const Suggestions = ["Apple", "Banana", "Papaya", "Orange", "Kiwi" ]
 
   return (
     <>
@@ -43,7 +41,7 @@ function App() {
         {/* <SearchBar/> */}
         {/* <ImageCarousel/> */}
         {/* <TabsComponent/> */}
-        <AutoComplete suggestions={Suggestions} />
+        <AutoCompleteComponent/>
       </div>
     </> 
   )
