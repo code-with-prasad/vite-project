@@ -15,6 +15,7 @@ import SearchBar from './projects/project8/App';
 import ImageCarousel from './projects/project9/App';
 import TabsComponent from './projects/project10/App';
 import AutoCompleteComponent from './projects/project11/App';
+import TabListComponent from './projects/project12/App';
 
 function App() {
 
@@ -41,7 +42,8 @@ function App() {
         {/* <SearchBar/> */}
         {/* <ImageCarousel/> */}
         {/* <TabsComponent/> */}
-        <AutoCompleteComponent/>
+        {/* <AutoCompleteComponent/> */}
+        <TabListComponent/>
       </div>
     </> 
   )

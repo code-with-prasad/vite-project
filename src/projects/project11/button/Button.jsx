@@ -4,7 +4,7 @@ import './style.css';
 
 const Button = ({lable, onClick = ()=>{}, ...rest}) => {
   return (
-    <button onClick={onClick} {...rest} >{lable}</button>
+    <button onClick={onClick} {...rest} className='text-white' >{lable}</button>
   )
 }
 
